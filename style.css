@@ -23,12 +23,6 @@ div {
     padding: 8px;
 }
 
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-}
-
 /*Adaptabilidade*/
 @media screen and (max-width: 768px) {
     section {

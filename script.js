@@ -3,13 +3,11 @@ function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
 
-    var horas = new Date()
-    var hora = horas.getHours()
+    var hora = new Date()
 
-    var minutos = new Date()
-    var minuto = minutos.getMinutes()
+    var horario = 'Agora são: ' + corrigirHorario(hora.getHours()) + ' hora(s), ' + corrigirHorario(hora.getMinutes()) + ' minuto(s) e ' + corrigirHorario(hora.getSeconds()) + ' segundo(s)!'
 
-    msg.innerHTML = `Agora são ${hora} hora(s) e ${minuto} minuto(s)!`
+    msg.textContent = horario
 
     if (hora >= 0 && hora < 12) {
         day.innerHTML = 'Bom dia!'
@@ -25,3 +23,12 @@ function carregar() {
         document.body.style.background = '#100E0F'
     }
 }
+
+function corrigirHorario(numero) {
+    if (numero < 10) {
+        numero = '0' + numero
+    }
+    return numero
+}
+
+setInterval(carregar, 1000);
