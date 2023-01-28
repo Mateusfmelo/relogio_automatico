@@ -9,11 +9,11 @@ function carregar() {
 
     msg.textContent = horario
 
-    if (hora >= 0 && hora < 12) {
+    if (hora.getHours() >= 0 && hora.getHours() < 12) {
         day.innerHTML = 'Bom dia!'
         img.src = 'manha.png'
         document.body.style.background = '#F3A68C'
-    } else if (hora >= 12 && hora < 18) {
+    } else if (hora.getHours() >= 12 && hora.getHours() < 18) {
         day.innerHTML = 'Boa tarde!'
         img.src = 'tarde.png'
         document.body.style.background = '#FD9F4E'
