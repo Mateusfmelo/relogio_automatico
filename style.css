@@ -28,6 +28,6 @@ div {
     section {
         text-align: center;
         width: 285px;
-        padding: 0;
+        padding-left: 0;
     }
 }
