@@ -11,15 +11,15 @@ function carregar() {
 
     if (hora.getHours() >= 0 && hora.getHours() < 12) {
         day.innerHTML = 'Bom dia!'
-        img.src = 'manha.png'
+        img.src = 'imagens/manha.png'
         document.body.style.background = '#F3A68C'
     } else if (hora.getHours() >= 12 && hora.getHours() < 18) {
         day.innerHTML = 'Boa tarde!'
-        img.src = 'tarde.png'
+        img.src = 'imagens/tarde.png'
         document.body.style.background = '#FD9F4E'
     } else {
         day.innerHTML= 'Boa noite!'
-        img.src = 'noite.png'
+        img.src = 'imagens/noite.png'
         document.body.style.background = '#100E0F'
     }
 }

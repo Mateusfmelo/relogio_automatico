@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
     margin: auto;
     background: rgb(70, 142, 236);
@@ -5,6 +9,7 @@ body {
 }
 
 header {
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
 }
@@ -18,9 +23,11 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
-div {
+#msg, #day, #foto, #imagem {
+    font-family: 'Roboto Condensed', 'Times New Roman', Times, serif;
     text-align: center;
     padding: 8px;
+    padding-left: 12px;
 }
 
 /*Adaptabilidade*/
